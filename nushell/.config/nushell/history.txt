@@ -1,0 +1,938 @@
+stow alacritty/ bspwm/ lvim/ nushell/ sxhkd/
+ls
+cd dotf
+ls
+mkdir starship/.config
+mv ~/.config/starship.toml starship/.config/
+stow starship
+mkdir doom/.config/doom
+cd doom/.config/
+ls
+mkdir doom
+mv ~/.config/doom/
+mv ~/.config/doom/ doom
+ls
+cd ..
+stow doom
+mkdir dunst/.config/dunst
+rmdir dunst/.config/dunst/
+ls
+mv ~/.config/dunst/ dunst/.config/
+stow dunst
+mkdir rofi/.config
+mv ~/.config/rofi/ rofi/.config/
+stow rofi
+mkdir zathura/.config
+mv ~/.config/zathura/ zathura/.config/
+stow zathura/
+mkdir ranger/.config
+mv ~/.config/ranger/ ranger/.config/
+stow ranger
+conky
+sps conky
+conky
+sudo pacman -R conkt
+conky
+sudo pacman -R conky
+mkdir wallpapers/Pictures/wallpapers
+stow wallpapers
+ls wallpapers/Pictures/wallpapers/
+stow wallpapers
+cd dotf
+ls
+git add .
+ranger
+cd dot
+git add .
+gc "reworked using GNU stow"
+gpom
+cd dot
+mkdir picom/.config
+mv ~/.config/picom.conf picom/.config/
+stow picom
+pkill picom
+gaa
+gc "reworked using GNU stow"
+gpom
+ranger
+cd dot
+ls
+mkdir files
+ln -s bspwm/.config/bspwm/ files/
+ls files
+v
+cd files
+cd bspwm
+ls
+v bspwmrc
+cd ../..
+cd dot
+ls
+rm -rf files
+ls
+v
+cd dr
+cd dot
+ranger
+stow bspwm
+ls
+cd dot
+gaa
+gc "changed doom to prevent errors ( it doesn't allow for the config to be a symlink"
+ls
+rm -rf doom
+gaa
+gc "changed doom to prevent errors ( it doesn't allow for the config to be a symlink"
+gpom
+cd fleeting
+ls
+git clone https://github.com/catppuccin/fcitx5.git<\n>mkdir -p ~/.local/share/fcitx5/themes/<\n>cp -r ./fcitx5/src/* ~/.local/share/fcitx5/themes
+cd .config/fcitx/
+ls
+cd conf/
+ls
+cd ..
+sudo pacman -R fcitx
+sps fcitx5
+ls
+sudo pacman -R fcitx
+sudo pacman -R fcitx fcitx-configtool fcitx-configtool 
+sudo pacman -R fcitx fcitx-configtool fcitx-configtool fcitx-qt5 fcitx-qt6
+sudo pacman -R fcitx fcitx-configtool fcitx-configtool fcitx-qt5 fcitx-qt6 fcitx-mozc
+sudo pacman -S fcitx5 fcitx5-configtool fcitx5-configtool fcitx5-qt5 fcitx5-qt6 fcitx5-mozc
+sudo pacman -S fcitx5 fcitx5-configtool fcitx5-configtool fcitx5-mozc
+cd
+v .bashrc
+pkill fcitx
+cd .config/fcitx5/
+ls
+cd conf
+ls
+v classicalui.conf
+fcitx5 -r
+私はルニヤです
+cmatrix
+emk
+emd
+dust
+cargo install dust
+sps dust
+dust
+ls /dev
+gparted
+sps gparted
+gparted
+sudo gparted
+sps pacman-contrib
+rankmirrors
+rankmirrors -m 1000
+sudo fdisk -l
+cat /etc/pacman.d/mirrorlist
+mkdir hardD
+sudo mount /dev/sda hardD/
+sudo mkdir /mount/hardDisk
+sudo mkdir -p /mount/hardDisk
+sudo mount /dev/sda /mount/hardDisk/
+sudo mount /dev/sda /mnt/hardDisk/
+sudo mkfs -t ext4 /dev/sda
+sudo mount /dev/sda /mnt/hardDisk/
+sudo mount /dev/sda hardD/
+sudo lsblk -f
+ls
+cd hardD
+v new
+cd ..
+ls
+sudo chown luniya hardD/
+cd hardD
+ls
+v new
+ls
+ls lost+found/
+sudo ls
+sudo ls lost+found/
+cd ..
+sudo nvim /etc/fstab
+cd hardD/
+ls
+la
+ll
+v haii
+ls
+cd ..
+ls
+cd hardD/
+mkdir Games
+mkdir Games/lutrisGames
+anki
+pkill -f anki
+kill -f 2666
+yay -S an-anime-game-launcher-bin
+sps mate-polkit
+/usr/lib/mate-polkit/polkit-mate-authentication-agent-1
+cd dot
+cd bspwm/.config/bspwm/
+v bspwmrc
+cd dot
+gaa
+gc "updated readme"
+gpom
+cd duns
+ls
+cd ..
+cd duns
+ls
+notify-send "haiiii >3<"
+sudo systemctl --user restart dunst
+sudo systemctl restart dunst 
+pkill dunst
+notify-send "haiiii >3<"
+dunst
+notify-send "haiiii >3<"
+dunst
+notify-send "haiiii >3<"
+xrandr -q
+dunst
+notify-send "haiiii >3<"
+dunst
+notify-send "haiiii >3<"
+dunst
+notify-send "haiiii >3<"
+v dunstrc
+ls
+cd ..
+ls
+cd dot
+cd dunst/
+cd .config/dunst/
+dunst
+notify-send "haiiii >3<"
+dunst
+v dunstrc
+cd ../..
+cd ..
+cd picom/.config/picom.conf
+cd picom/.config/
+notify-send "haiiii >3<"
+dunst
+notify-send "haiiii >3<"
+v picom.conf
+q
+私はルニヤです
+わｔｓひ
+GTK_IM_MODULE=xim firefox
+sudo pacman -Sty
+spsyu
+notify-send "haiiii >3<"
+emd
+emk
+emd
+\
+yay -S firefox-nightly
+cmatrix
+cd .local/bin/
+ls
+bash
+v hi.sh
+sudo chmod +x hi.sh
+v .bashrc
+bash
+cd dotfiles/
+ls
+bash
+bash
+sh
+fish
+cd conf
+	neofetch --backend 'w3m' --xoffset 34 --yoffset 34 --gap 0<\n>
+echo ha
+	neofetch --backend 'w3m' --xoffset 34 --yoffset 34 --gap 0<\n>
+v fish/
+nf
+hyfetch
+fastfetch
+q
+exit
+whereis nano
+exit
+nu
+exitr
+date
+date now
+cd dotfiles/
+ls
+ranger
+cd dotfiles/
+stow polybar/
+cd catppuccin/
+stow polybar/
+ls
+stow polybar/
+pkill polybar
+polybar
+v polybar/.config/polybar/
+stow polybar/
+ranger
+polybar
+cd dot
+stow polybar/
+cd catppuccin/
+rm ~/.config/polybar/
+rm -rf ~/.config/polybar/
+ranger
+cd ..
+mkdir .catppuccin_theme
+./switch.sh
+cd ..
+cp .DeskTheme.catppuccin/ .DeskTheme.gruvbox/
+cp .DeskTheme.catppuccin/ .DeskTheme.gruvbox
+ranger
+cd ..
+ll
+unlink alacritty bspwm catppuccin dunst exceptions lvim nushell polybar picom ranger rofi switch.sh sxhkd wallpapers zathura
+unlink alacritty && unlink bspwm && catppuccin dunst exceptions lvim nushell polybar picom ranger rofi switch.sh sxhkd wallpapers zathura
+unlink alacritty ; unlink bspwm ; unlink catppuccin ; unlink dunst ; unlink exceptions ; unlink lvim ; unlink nushell ; unlink polybar ; unlink picom ; unlink ranger ; unlink rofi ; unlink switch.sh ; unlink sxhkd ; unlink wallpapers ; unlink zathura
+unlink alacritty ; unlink bspwm ; unlink catppuccin ; unlink dunst ; unlink exceptions ; unlink lvim ; unlink nushell ; unlink polybar ; unlink picom ; unlink ranger ; unlink rofi ; unlink switch.sh ; unlink sxhkd ; unlink wallpapers ; unlink zathura ; unlink starship
+unlink starship
+cd Desktop/
+cd ..
+cd .DeskTheme.catppuccin/
+./switch.sh
+v bspwmrc
+mkdir DeskThemes
+cd DeskThemes/
+ls
+ln -s ~/.DeskTheme.catppuccin/
+ln -s ~/.DeskTheme.grubox/
+ls
+ls -la
+ranger
+unlink .DeskTheme.grubox
+unlink .DeskTheme.catppuccin/
+unlink .DeskTheme.catppuccin
+ls -la
+ln -s ~/.DeskTheme.grubox/ grubox
+ln -s ~/.DeskTheme.catppuccin/ catppuccin
+ls -la
+ls
+cd grubox
+unlink .DeskTheme.grubox
+unlink grubox
+ls
+ln -s ~/.DeskTheme.gruvbox/ gruvbox
+ls
+cd gruvbox
+ls
+cd ..
+nurc
+ranger
+ssh git.charm.sh
+go main.go
+go run main.go
+go mod init github.com/charmbracelet/huh
+go run main.go
+go get github.com/charmbracelet/huh
+go run main.go
+go mod init github.com/charmbracelet/huh
+go get github.com/charmbracelet/huh
+go run main.go
+go run playground
+go get
+exit
+cd dev
+ls
+cd ..
+cd golang/
+kls
+ls
+cd playground/
+ls
+ls -a
+go run main.go
+go get github.com/charmbracelet/huh
+go mod init github.com/charmbracelet/huh
+go mod tidy
+go get github.com/charmbracelet/huh
+go run main.go
+	"github.com/charmbracelet/huh"<\n>
+go mod add github.com/charmbracelet/bubbletea
+go mod init github.com/charmbracelet/bubbletea
+rm go.mod
+go mod init github.com/charmbracelet/bubbletea
+go get github.com/charmbracelete/bubbletea
+go get github.com/charmbracelet/bubbletea
+ls
+rm go.mod
+go run main.go
+go mod init github.com/charmbracelet/bubbletea
+go get github.com/charmbracelet/bubbletea
+go run main.go
+gola
+cd gola
+ls
+rm -rf playground/
+chmod +x main.sh
+./main.sh
+cd .scripts/themeSwitcher/
+./main.sh
+yay -S uwufetch
+uwufetch
+cd sxh
+ls
+v sxhkdrc
+cd ..
+cd
+cd DeskThemes/
+ls
+cd catppuccin/
+ls
+rm -rf sxhkd/
+cd ..
+cd gruvbox/
+ls
+rm -rf sxhkd/
+cd
+cd dotfiles/ls
+cd dotfiles/
+ls
+stow sxhkd/
+rm -rf .config/sxhkd
+cd dotfiles/
+cd sxhkd/.config/sxhkd/sxhkdrc
+cd sxhkd/.config/sxhkd/
+ls
+v sxhkdrc
+cd DeskThemes/
+ls
+cd catppuccin/
+ls
+v switch.sh
+cd ..
+cd gruvbox/
+v switch.sh
+ls
+v test1
+echo "wahahahah" > test1
+bash
+fastfetch
+uwufetch
+yay -S hyper
+ln -S hardD/Pictures/
+ln -S hardD/Pictures/ ~/Pictures
+ln -s hardD/Pictures/
+ln -s hardD/Videos/
+ln -s hardD/screenshots/
+pwd
+./launch.sh
+./.scripts/themeSwitcher/themeSwitcher.sh
+cd ../../..
+./switch.sh
+./switch
+pkill picom
+picom
+emk
+emd
+cbonsai
+cd Downloads/
+ls
+unzip `!!ṨetUp_11483_#PaSŜwr0d!!.zip`
+ls
+la
+cd open___files/
+ls
+unrar @!Ŝétup-11483-PaS$Kḙy!!.rar
+unrar x @!Ŝétup-11483-PaS$Kḙy!!.rar
+yay -S slock
+slock
+yay -S xsecurelock
+xsecurelock 
+xscreensaver
+yay -S xscreensaver
+spsyu xscreensaver
+xscreensaver
+xscreensaver --display
+slock
+xsecurelock 
+man xscreensaver
+cd sxh
+ls
+fastfetch
+fastfetch
+cmatrix
+fastfetch
+cbonsai
+q
+cd hardD/
+cd wallpapers/;s
+cd wallpapers/
+ls
+nitrogen netbsd.png
+nitrogen --help
+nitrogen --random
+nitrogen --help
+nitrogen --set-scaled netbsd.png
+man nitrogen
+cd wall
+ls
+nitrogen --head=DP-2 --set-zoom-fill netbsd.png
+cd kitt
+ls
+pwd
+cd .DeskTheme.catppuccin/
+mkdir kitty/.config/kitty/
+mv ~/.config/kitty/kitty.conf kitty/.config/kitty/
+ls kitty/.config/kitty/
+stow kitty/
+ls
+stow kitty/
+ranger
+cd ../.DeskTheme.gruvbox/
+cd kitty/.config/kitty/kitty.conf
+cd kitty/.config/kitty/
+v kitty.conf
+ls
+v kitty.conf
+pwd
+ranger
+v kitty.conf
+pwd
+v kitty.conf
+yay -S pipes
+pipes.sh
+yay pipes.sh
+yay -S pipes.sh
+uwufetch
+cbonsai
+q
+pipes.sh
+q
+nurc
+emacsclient --no-wait --eval '(setq! doom-theme 'catppuccin)'
+emacsclient --no-wait --eval "(setq! doom-theme 'catppuccin)"
+v switch.sh
+emacsclient --no-wait --eval "(setq! doom-theme 'catppuccin)"
+emacsclient --no-wait --eval "(setq! doom-theme 'doom-gruvbox) (refresh-all-windows)"
+emk
+emd
+emacsclient --no-wait --eval "(setq! doom-theme 'doom-gruvbox) (refresh-all-windows)"
+emk
+emd
+emacsclient --no-wait --eval "(setq! doom-theme 'doom-gruvbox) (refresh-all-frames)"
+emk
+emd
+emacsclient --no-wait --eval "(setq! doom-theme 'doom-gruvbox) (doom/reload-theme)"
+emacsclient --no-wait --eval "(doom/reload-theme)"
+emacsclient --no-wait --eval "(setq! doom-theme 'doom-gruvbox)"
+emacsclient --no-wait --eval "(doom/reload-theme)"
+emacsclient --no-wait --eval "(load-theme 'doom-gruvbox)"
+emacsclient --no-wait --eval "(load-theme 'catppuccin)"
+emacsclient --no-wait --eval "(load-theme 'doom-gruvbox)"
+emacsclient --no-wait --eval "(load-theme 'catppuccin)"
+emk
+emd
+emacsclient --no-wait --eval "(load-theme 'doom-gruvbox)"
+emacsclient --no-wait --eval "(load-theme 'catppuccin)"
+bash
+q
+fastfetch
+dust
+qq]
+cargo new playground
+yay -S rust_analyzer
+yay -S rust-analyzer
+cargo run
+v
+emd
+sps yazi
+yazi
+cd flee
+ls
+git clone https://github.com/agryphus/archrice.git
+ranger
+yazi
+cd
+cd conf
+cd yazi/
+yay -S ueberzugpp
+spsyu
+v
+yay -S ueberzugpp
+yuzi
+yazi
+cd yazi
+ls
+cd plugins/
+ls
+v smart-enter.yazi/
+ls
+cd ..
+ls
+opener
+cd Videos/
+ls
+vlc `Avocados 🥑 from Mexico 🇲🇽.mp4`
+emd
+cd doom
+ls
+cd emacs
+ls
+cd bin
+ls
+./doom doctor
+cd ranger
+ls
+rnager
+cd screenshots/
+ls
+feh --auto-zoom --no-fehbg screenshot_20240622_141013.png
+feh --scale-down --image-bg black screenshot_20240622_141013.png
+feh --auto-zoom --no-fehbg screenshot_20240622_141013.png
+./doom sync
+feh --zoom fill --no-fehbg screenshot_20240622_141013.png
+feh --auto-zoom --no-xinerama screenshot_20240622_141013.png
+feh --bg-max screenshot_20240622_141013.png
+emd
+feh --scale-down --no-menus --image-bg black screenshot_20240601_134036.png
+feh --auto-zoom --scale-down --no-menus --image-bg black image.jpg<\n>
+feh --auto-zoom --scale-down --no-menus --image-bg black screenshot_20240601_134036.png
+v yazi.toml
+cd .con
+cd Pictures/
+ls
+feh YEAH.jpeg
+feh --auto-zoom YEAH.jpeg
+feh --auto-zoom jerma.png
+feh jerma.png
+feh --help
+feh -Z jerma.png
+feh --fill jerma.png
+nomacs
+sps fim
+yay -S fim
+yay -S viu
+viu
+viu jerma.png
+ranger
+v rifle.conf
+cd yazi
+cd Pictures/
+ls
+sudo pacman -R feh
+yay -S feh-git
+feh
+ls
+feh --auto-zoom jerma.png
+feh --auto-zoom --scale-down jerma.png
+feh --auto-zoom --scale-down 
+sxiv
+sps sxiv
+cd Pictures/
+l
+ls
+sxiv -s F YEAH.jpeg
+sxiv -s YEAH.jpeg
+sxiv YEAH.jpeg
+sxiv jerma.png
+sudo pacman -R feh
+sudo pacman -R feh-git
+cd yazi
+v  yazi.toml
+xdg-mime default sxiv.desktop image/jpeg<\n>xdg-mime default sxiv.desktop image/png<\n>xdg-mime default sxiv.desktop image/gif<\n>xdg-mime default sxiv.desktop image/bmp<\n>xdg-mime default sxiv.desktop image/tiff<\n>
+cd Pictures/
+xdg-open eepyMe.jpg
+v yazi.toml
+mpv
+cd Pictures/
+ls
+mpv colon-three-kitty.gif
+mpv --loop=infg colon-three-kitty.gif
+mpv --loop=inf colon-three-kitty.gif
+cd ..
+ls
+cd yaz
+v yazi.toml
+cat /usr/share/applications/mpv.desktop
+sudo nvim /usr/share/applications/mpv.desktop
+xdg-mime default mpv.desktop image/gif
+cd Pictures/
+ls
+mpv YEAH.png
+cd yaz
+xdg-mime default mpv.desktop image/jpeg<\n>xdg-mime default mpv.desktop image/png<\n>xdg-mime default mpv.desktop image/gif<\n>xdg-mime default mpv.desktop image/bmp<\n>xdg-mime default mpv.desktop image/tiff<\n>
+v yazi.toml
+cargo run
+yay -S charm-pop-bin
+pop
+cd yazi
+ls
+cd Downloads/
+ls
+ranger
+ranger
+v keymap.toml
+thunar
+emk
+emd
+emk
+emd
+emk
+emd
+emk
+emd
+doom
+nuenv
+doom sync
+doom doctor
+sps emacs-nativecomp
+emk
+emd
+doom doctor
+cd doom
+emacs -nw --color=no config.el
+emacs -nw config.el
+em config.el
+sps ttf-space-mono-nerd
+emk
+emd
+v
+emk
+emd
+yay -S floorp
+yay -S floorp-bin
+floorp
+notify-send "screenshot taken <3"
+notify-send --help
+notify-send -t=5 "hai"
+notify-send -t 5 "hai"
+notify-send -t 500 "hai"
+notify-send -t 2000 "hai"
+notify-send -t 2000 "screenshot coppied to clipboard"
+cd sxh
+v sxhkdrc
+cd sxh
+v sxhkdrc
+fcitx
+sps fcitx
+sudo pacman -R fcitx5 fcitx5-configtool fcitx5-configtool fcitx5-qt5  fcitx5-mozc
+sudo pacman -R fcitx5 fcitx5-configtool fcitx5-configtool fcitx5-qt  fcitx5-mozc
+sps fcitx fcitx-configtool fcitx-qt5 fcitx-1t6 fcitx-mozc
+sps fcitx fcitx-configtool fcitx-qt5 fcitx-qt6 fcitx-mozc
+v .bashrc
+pkill fcitx5
+fcitx
+sudo pacman -R fcitx fcitx-configtool fcitx-configtool fcitx-qt5 fcitx-qt6 fcitx-mozc
+sps fcitx5 fcitx5-configtool fcitx5-qt fcitx5-mozc
+bash
+v .bashrc
+sudo nvim /etc/profile
+nash
+bash
+v .bashrc
+bash
+cd bsp
+sps kate
+v .bashrc
+sudo nvim /etc/X11/xinit/xinitrc.d/40-fcitx.sh
+sudo chmod +x /etc/X11/xinit/xinitrc.d/40-fcitx.sh
+bash
+v bspwmrc
+v .xinitrc
+v .bashrc
+v .bash_profile
+v .xinitrc
+BASH
+bash
+v .bashrc
+cargo run
+v .bashrc
+cargo run
+ls /etc/lib
+ls /usr/lib
+rofi -show drun
+yay -S openboard
+yay -S openboard-bin
+sps tex0live
+sps tex-live
+sps texlive
+xdg-settings set default-web-browser floorp.desktop
+v .bashrc
+whereis floorp
+emk
+emd
+brightnessctl
+sps brightnessctl
+brightnessctl s 20- &&
+brightnessctl s 20-
+brightnessctl s 20+
+emk
+emd
+nf
+cbonsai
+lsblk
+mkdir test
+sudo mount sdb1 test  
+sudo mount sdb test  
+man mount
+man --help
+sudo mount /dev/sdb1 test 
+ranger
+sps ark
+lsblk
+cd test
+cd ..
+sudo mount /dev/sdb1 test 
+unmount /dev/sdb1
+bash unmount /dev/sdb1
+umount /dev/sdb1
+ranger
+bash
+v .bashrc
+bash
+nf
+fish
+nf
+emk
+emd
+cd Documents/
+cd dev/
+ls
+mkdir python
+cd python/
+python main.py
+v main.py
+v main.lua
+v main.rs
+v main.py
+bash
+doom doctor
+lua main.lua
+exit
+sps code
+spsyu
+sps code
+code
+cd dev
+cd python/
+python main.py
+v main.py
+lua main.lua
+yay java7
+yay java8
+yay -S jre8-openjdk-headless
+nvim
+git clone https://github.com/LunaKITPI/notim-nvim.git ~/.config/nvim/<\n>nvim
+rm -rf .config/nvim
+git clone https://github.com/LunaKITPI/notim-nvim.git ~/.config/nvim/<\n>nvim
+nvim
+cd Documents/
+ls
+nvim test.md
+nvim main.neorg
+nvim main.norg
+yay proton-ge
+yay -S proton-ge-custom
+nf
+cbonsai
+uwufetch
+emk
+emd
+sps transmition-qt
+sps transmission-qt
+yay -S tremc
+transgui-qt
+yay -S transgui-qt
+sps qbittorrent
+pkill vesktop
+spsyu
+cd Documents/
+ls
+nvim main.norg
+sps ncmpcpp-clock
+cargo run
+nf
+uwufetch
+pkill phasmo
+v
+lua main.lua
+anki
+lua main.lua
+pwd
+cargo run
+lua main.lua
+nf
+yay -S asciiville
+cbonsai
+pipes.sh
+cmatrix
+asciiville
+ln -s .DeskTheme.minimal-catppuccin-light/ DeskThemes/minimal-catppuccin-light
+ln -S .DeskTheme.minimal-catppuccin-light/ DeskThemes/minimal-catppuccin-light
+ln -s .DeskTheme.minimal-catppuccin-light/ DeskThemes/minimal-catppuccin-light/
+ln -s ~/.DeskTheme.minimal-catppuccin-light/ DeskThemes/minimal-catppuccin-light
+gaa
+gc "changed the blog indexing page"
+gpom
+gaa
+gc "oops accidently changed the width,, lemme change it back :3c"
+gpom
+pipes.sh
+lv
+cd leetc
+cd city_weight/
+v
+cd dunst
+ls
+v dunstrc
+notify-send -t 2000 "screenshot coppied to clipboard"
+qq]
+gaa
+gc "removed he shrines, I am to exhausted to do the whole shrine thing tbh"
+gpom
+gaa
+gc "forgor to change lil text"
+gpom
+cd bsp
+v bspwmrc
+cargo init
+la
+rm -rf .git/
+rm -rf Cargo.toml src/
+ls
+la
+cd leetc
+ls
+cd sorting_bookshelves/
+cargo init
+cd leetc
+cd sorting_bookshelves/
+v
+cd leetc
+ls
+cd median2arrays/
+cargo run
+asciiville
+cargo run
+v
+cd kana
+v config.kbd
+systemctl status kanata
+systemctl --user status kanata
+systemctl --user restart kanata
+cd kana
+systemctl --user restart kanata
+fastfetch
+pipes.sh
+yay -S balena-ethcer-bin
+yay -S balena-etcher-bin
+yay -S balena-etcher
+cd .DeskTheme.minimal-catppuccin/
+ls
+git init
+rm -rf .git
+touch README.md<\n>git init<\n>git checkout -b main<\n>git add README.md<\n>git commit -m "first commit"<\n>git remote add origin https://git.gay/LunaKitpi/dotfiles-bspwm.git<\n>git push -u origin main
+ls
+gaa
+gc "init"
+gpom
+rm -rf .git
+echo "# dotfiles-bspwm" >> README.md<\n>git init<\n>git add README.md<\n>git commit -m "first commit"<\n>git branch -M main<\n>git remote add origin https://github.com/LunaKITPI/dotfiles-bspwm.git<\n>git push -u origin main

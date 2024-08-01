@@ -1,0 +1,98 @@
+#! /bin/sh
+
+#                                   _       _
+#                              _   (_)     | |
+#   ____  ___  ___  ____ ____ | |_  _  ____| | ___
+#  / _  )/___)/___)/ _  )  _ \|  _)| |/ _  | |/___)
+# ( (/ /|___ |___ ( (/ /| | | | |__| ( ( | | |___ |
+#  \____|___/(___/ \____)_| |_|\___)_|\_||_|_(___/
+
+# fix padding incase bars have different dimensions
+
+export GTK_IM_MODULE='fcitx'
+export QT_IM_MODULE='fcitx'
+export SDL_IM_MODULE='fcitx'
+export XMODIFIERS='@im=fcitx'
+
+bspc config bottom_padding 0
+bspc config top_padding 0
+
+# polybar
+killall -q polybar # kill all polybar instances
+while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done # wait untill they closed
+~/.config/polybar/launch.sh # launch script
+
+# picom
+killall -q picom # kill all picom instances
+while pgrep -u $UID -x picom >/dev/null; do sleep 1; done # wait untill they closed
+picom &
+
+# hotkey deamon
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# audio controll tray
+killall -q pasystray
+while pgrep -u $UID -x pasystray >/dev/null; do sleep 1; done
+pasystray &
+
+# polkit
+/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+
+# enabling correct notification use
+killall -q dunst # kill all dunst instances
+while pgrep -u $UID -x dunst >/dev/null; do sleep 1; done # wait untill they closed
+systemctl --user enable dunst &
+systemctl --user start dunst &
+
+#  _                                                 ___ _
+# | |                                               / __|_)
+# | | _   ___ ____  _ _ _ ____      ____ ___  ____ | |__ _  ____
+# | || \ /___)  _ \| | | |    \    / ___) _ \|  _ \|  __) |/ _  |
+# | |_) )___ | | | | | | | | | |  ( (__| |_| | | | | |  | ( ( | |
+# |____/(___/| ||_/ \____|_|_|_|   \____)___/|_| |_|_|  |_|\_|| |
+#            |_|                                          (_____|
+
+# setting up monitors + assigning workspaces
+bspc monitor DP-2 -d 1 2 3 4
+bspc monitor HDMI-0 -d 5 6 7
+
+# making windows where my mouse moves on top of automatically take focus
+bspc config focus_follows_pointer true
+
+# general configurations for bspwm
+bspc config border_width         1
+bspc config window_gap          1
+bspc config border_radius	0
+
+bspc config normal_border_color \#000000
+bspc config active_border_color \#000000
+bspc config focused_border_color \#c0caf5
+
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc rule -a "Vesktop"                desktop=^5
+bspc rule -a "Spotify"                desktop=^5
+
+# some simple bspc rules to manage the default states of apps
+bspc rule -a Rofi state=floating
+bspc rule -a Emacs state=tiled # idk why but spotify and emacs really like being in a floating state for some weird reasaon
+bspc rule -a Spotify state=tiled
+
+
+#       _               _
+#   ___| |_  ____  ____| |_ _   _ ____     ____   ____ ___   ____  ____ ____ ____   ___
+#  /___)  _)/ _  |/ ___)  _) | | |  _ \   |  _ \ / ___) _ \ / _  |/ ___) _  |    \ /___)
+# |___ | |_( ( | | |   | |_| |_| | | | |  | | | | |  | |_| ( ( | | |  ( ( | | | | |___ |
+# (___/ \___)_||_|_|    \___)____| ||_/   | ||_/|_|   \___/ \_|| |_|   \_||_|_|_|_(___/
+#                                |_|      |_|              (_____|
+
+
+xdg-mime default firefox.desktop text/html # makes sure xdg uses firefox to open text/html files
+emacs --daemon & # emacs deamon
+xlayoutdisplay & # setting the best refresh rate on both monitors
+nitrogen --restore & # wallpaper
+fcitx5 -d & # keyboard input manager ( for example handeling multiple layouts )
+pcscd & # smart card daemon ( eid )
+kdeconnectd &
+kdeconnect-indicator &
